@@ -12,5 +12,5 @@
  */
 
 Route::get('/', function () {
-	return view('hotel/index');
+	return view('blog/main');
 });
