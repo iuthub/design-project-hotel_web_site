@@ -12,5 +12,11 @@
  */
 
 Route::get('/', function () {
+	return view('hotel/index');
+});
+Route::get('/blog', function () {
 	return view('blog/main');
 });
+Auth::routes();
+Route::get('profile', 'UserController@profile');
+Route::post('profile', 'UserController@update_avatar');
