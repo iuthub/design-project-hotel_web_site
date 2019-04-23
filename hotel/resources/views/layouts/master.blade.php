@@ -32,5 +32,7 @@
   <script type="text/javascript" src="{{URL::to('js/bootstrap.min.js')}}"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="{{URL::to('js/mdb.min.js')}}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{URL::to('js/uploadcharacteristics.js')}}"></script>
 </body>
 </html>

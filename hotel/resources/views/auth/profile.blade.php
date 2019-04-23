@@ -24,11 +24,11 @@
                 </div>
             @endif
         </div>
-        <div class="row justify-content-center">
+        <div class="row">
 
             <div class="profile-header-container">
                 <div class="profile-header-img">
-                    <img class="rounded-circle" src="/storage/avatars/{{ $user->avatar }}" />
+                    <img class="rounded float-left" style="width:250px" src="/storage/avatars/{{ $user->avatar }}" />
                     <!-- badge -->
                     <div class="rank-label-container">
                         <span class="label label-default rank-label">{{$user->name}}</span>
@@ -37,7 +37,8 @@
             </div>
 
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-end
+">
             <form action="/profile" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">

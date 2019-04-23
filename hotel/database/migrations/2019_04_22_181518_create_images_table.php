@@ -15,7 +15,7 @@ class CreateImagesTable extends Migration {
 			$table->bigIncrements('id');
 			$table->timestamps();
 			$table->integer('post_id');
-			$table->string('url_id');
+			$table->string('imagepath');
 		});
 	}
 
