@@ -15,7 +15,7 @@ Route::get('/', function () {
 	return view('hotel/index');
 });
 Route::get('/blog', function () {
-	return view('blog/main');
+	return view('blog/index');
 })->name('blog.index');
 Route::group(['prefix' => 'admin'], function() {
     // Route::get('', [

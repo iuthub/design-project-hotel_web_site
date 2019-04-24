@@ -16,7 +16,7 @@ class UserController extends Controller
     	$user=Auth::user();
     	$avatarName=$user->id.'_avatar'.time().'.'.request()->avatar->getClientOriginalExtension();
     	$request->avatar->storeAs('public/avatars', $avatarName);
-    	$user->avatar=$avatar=$avatarName;
+    	$user->avatar=$avatarName;
     	$user->save();
     	return back()->with('success', 'You have successfully uploaded image.');   
     }
