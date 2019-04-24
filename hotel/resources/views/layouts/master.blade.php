@@ -13,9 +13,7 @@
 	@include('partials.header')
 </header>
 <main>
-<div class="container">
     @yield('content')
-</div>
 </main>
 <footer>
 @include('partials.footer')
@@ -23,7 +21,6 @@
 
  <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="{{URL::to('js/jquery-3.3.1.min.js')}}"></script>
 
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="{{URL::to('js/popper.min.js')}}"></script>
@@ -32,5 +29,10 @@
   <script type="text/javascript" src="{{URL::to('js/bootstrap.min.js')}}"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="{{URL::to('js/mdb.min.js')}}"></script>
+  {{-- Jquery slider Plugin--}}
+  <script src="js/framework/slideWiz.js"></script>
+  <script src="js/slideShow.js"></script>
+  {{-- my script --}}
+  <script src="js/script.js"></script>
 </body>
 </html>
