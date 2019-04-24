@@ -28,10 +28,12 @@ foreach ($request->file('filename') as $file) {
 }
 $id->images()->saveMany($fileNames);
    return redirect()->route('blog.index');
-
-
 }
 public function getAdminCreate(Request $request){
 return view('blog.create');
+}
+public function getIndex(){
+    $posts=Post::paginate(1);
+    return view('blog.draft', ['posts'=>$posts]); 
 }
 }

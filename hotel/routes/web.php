@@ -14,9 +14,13 @@
 Route::get('/', function () {
 	return view('hotel/index');
 });
-Route::get('/blog', function () {
-	return view('blog/index');
-})->name('blog.index');
+// Route::get('/blog', function () {
+// 	return view('blog/index');
+// })->name('blog.index');
+Route::get('blog/index', [
+        'uses' => 'PostController@getIndex',
+        'as' => 'blog.index'
+    ]);
 Route::group(['prefix' => 'admin'], function() {
     // Route::get('', [
     //     'uses' => 'PostController@getAdminIndex',
