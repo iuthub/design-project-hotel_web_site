@@ -52,14 +52,44 @@
                                 @endif
                             </div>
                         </div>
-
-                        <div class="form-group row">
+                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+
+
+
+                        <div class="form-group row">
+                            <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" value="{{ old('address') }}" required autofocus>
+
+                                @if ($errors->has('address'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('address') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <label for="pass_id" class="col-md-4 col-form-label text-md-right">{{ __('Passport id') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="pass_id" type="text" class="form-control{{ $errors->has('pass_id') ? ' is-invalid' : '' }}" name="pass_id" value="{{ old('pass_id') }}" required autofocus>
+
+                                @if ($errors->has('pass_id'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('pass_id') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                       
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
