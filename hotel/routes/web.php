@@ -21,6 +21,9 @@ Route::get('blog/index', [
         'uses' => 'PostController@getIndex',
         'as' => 'blog.index'
     ]);
+Route::get('/', function () {
+	return view('hotel/index');
+});
 Route::group(['prefix' => 'admin'], function() {
     // Route::get('', [
     //     'uses' => 'PostController@getAdminIndex',

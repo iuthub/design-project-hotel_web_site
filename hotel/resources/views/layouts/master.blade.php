@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @include('partials.head')
+
 <title>Hotel-@yield('title')</title>
 
 </head>
@@ -23,7 +24,6 @@
 
  <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="{{URL::to('js/jquery-3.3.1.min.js')}}"></script>
 
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="{{URL::to('js/popper.min.js')}}"></script>
@@ -34,5 +34,10 @@
   <script type="text/javascript" src="{{URL::to('js/mdb.min.js')}}"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="{{URL::to('js/uploadcharacteristics.js')}}"></script>
+ {{-- Jquery slider Plugin--}}
+  <script src="js/framework/slideWiz.js"></script>
+  <script src="js/slideShow.js"></script>
+  {{-- my script --}}
+  <script src="js/script.js"></script>
 </body>
 </html>
