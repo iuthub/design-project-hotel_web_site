@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -52,7 +52,8 @@
                                 @endif
                             </div>
                         </div>
-                         <div class="form-group row">
+
+                        <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
@@ -60,9 +61,7 @@
                             </div>
                         </div>
 
-
-
-                        <div class="form-group row">
+                                                <div class="form-group row">
                             <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
 
                             <div class="col-md-6">
@@ -88,8 +87,6 @@
                                 @endif
                             </div>
                         </div>
-
-                       
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">

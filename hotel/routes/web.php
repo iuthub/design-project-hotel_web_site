@@ -11,12 +11,11 @@
 |
  */
 
-Route::get('/', function () {
-	return view('hotel/index');
-});
-// Route::get('/blog', function () {
-// 	return view('blog/index');
-// })->name('blog.index');
+Route::get('/', [
+        'uses' => 'MainController@getIndex',
+        'as' => 'main.index'
+    ]);
+
 Route::get('blog/index', [
         'uses' => 'PostController@getIndex',
         'as' => 'blog.index'
@@ -54,3 +53,11 @@ Route::group(['prefix' => 'admin'], function() {
 Auth::routes();
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
