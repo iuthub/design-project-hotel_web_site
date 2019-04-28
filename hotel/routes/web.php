@@ -12,52 +12,51 @@
  */
 
 Route::get('/', [
-        'uses' => 'MainController@getIndex',
-        'as' => 'main.index'
-    ]);
+	'uses' => 'MainController@getIndex',
+	'as' => 'main.index',
+]);
+Route::get('/check', [
+	'uses' => 'MainController@searchAvailableRooms',
+	'as' => 'check',
+]);
 
 Route::get('blog/index', [
-        'uses' => 'PostController@getIndex',
-        'as' => 'blog.index'
-    ]);
-Route::get('/', function () {
-	return view('hotel/index');
-});
-Route::group(['prefix' => 'admin'], function() {
-    // Route::get('', [
-    //     'uses' => 'PostController@getAdminIndex',
-    //     'as' => 'admin.index'
-    // ]);
-    Route::get('create', [
-        'uses' => 'PostController@getAdminCreate',
-        'as' => 'admin.create'
-    ]);
-    
-    Route::post('create', [
-        'uses' => 'PostController@postAdminCreate',
-        'as' => 'admin.create'
-    ]);
-    // Route::get('edit/{id}', [
-    //     'uses' => 'PostController@getAdminEdit',
-    //     'as' => 'admin.edit'
-    // ]);
-    // Route::get('delete/{id}', [
-    //     'uses' => 'PostController@getAdminDelete',
-    //     'as' => 'admin.delete'
-    // ]);
-    // Route::post('edit', [
-    //     'uses' => 'PostController@postAdminUpdate',
-    //     'as' => 'admin.update'
-    // ]);
+	'uses' => 'PostController@getIndex',
+	'as' => 'blog.index',
+]);
+Route::get('show/{id}', [
+	'uses' => 'RoomController@show',
+	'as' => 'show',
+]);
+Route::group(['prefix' => 'admin'], function () {
+	// Route::get('', [
+	//     'uses' => 'PostController@getAdminIndex',
+	//     'as' => 'admin.index'
+	// ]);
+	Route::get('create', [
+		'uses' => 'PostController@getAdminCreate',
+		'as' => 'admin.create',
+	]);
+
+	Route::post('create', [
+		'uses' => 'PostController@postAdminCreate',
+		'as' => 'admin.create',
+	]);
+	// Route::get('edit/{id}', [
+	//     'uses' => 'PostController@getAdminEdit',
+	//     'as' => 'admin.edit'
+	// ]);
+	// Route::get('delete/{id}', [
+	//     'uses' => 'PostController@getAdminDelete',
+	//     'as' => 'admin.delete'
+	// ]);
+	// Route::post('edit', [
+	//     'uses' => 'PostController@postAdminUpdate',
+	//     'as' => 'admin.update'
+	// ]);
 });
 Auth::routes();
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

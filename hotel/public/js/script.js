@@ -1,11 +1,18 @@
 // -------------Date picker-------------------
 $('#datepicker').datepicker({
-    showOtherMonths: true
+    showOtherMonths: true,
+    format: 'yyyy-mm-dd',
+    formatSubmit: 'yyyy-mm-dd'
 });
 $('#datepicker2').datepicker({
-    showOtherMonths: true
+    showOtherMonths: true,
+    format: 'yyyy-mm-dd',
+    formatSubmit: 'yyyy-mm-dd'
 });
 
+// $('#datepicker2').pickadate({ min: new Date(2030,1,1),
+// max: new Date(2030,12,30)
+// });
 // -------------Dining bar tab------------------
 $("#tile-1 .nav-tabs a").click(function () {
     var position = $(this).parent().position();

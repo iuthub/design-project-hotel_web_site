@@ -1,0 +1,9 @@
+@extends('layouts.master')
+@section('content')
+@isset($room)
+<p>{{$room->id}}</p>
+<p>{{$room->type}}</p>
+<p>{{$room->max_adults}}</p>
+<p>{{$room->id}}</p>
+@endisset
+@endsection
