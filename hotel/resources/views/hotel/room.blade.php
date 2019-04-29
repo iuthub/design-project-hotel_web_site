@@ -5,5 +5,6 @@
 <p>{{$room->type}}</p>
 <p>{{$room->max_adults}}</p>
 <p>{{$room->id}}</p>
+<a href="{{route('order', ['roomNo'=>$room['room_number']])}}">Order</a>
 @endisset
 @endsection

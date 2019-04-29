@@ -1,8 +1,10 @@
 @extends('layouts.master')
 @section('content')
-        @isset($availableRooms)
+        {{-- @isset($availableRooms)
         @foreach($availableRooms as $aroom)
         <p>{{$aroom->id}}</p>
         @endforeach
-        @endisset
+        @endisset --}}
+        <p>{{$success}}</p>
+
 @endsection

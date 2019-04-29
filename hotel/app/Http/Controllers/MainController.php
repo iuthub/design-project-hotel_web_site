@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use App\Room;
+use Cookie;
 use Illuminate\Http\Request;
 
 class MainController extends Controller {
@@ -13,6 +14,10 @@ class MainController extends Controller {
 	public function searchAvailableRooms(Request $request) {
 		$arrivalDate = $request->get('arrival');
 		$departureDate = $request->get('departure');
+		$adults = $request->get('sellist1');
+		$children = $request->get('sellist2');
+		Cookie::queue(cookie('arrival', $arrivalDate, $minute = 10));
+		Cookie::queue(cookie('departure', $departureDate, $minute = 10));
 		$busyRooms = Order::where([
 			['arrival', '>=', $arrivalDate],
 			['departure', '<=', $departureDate],

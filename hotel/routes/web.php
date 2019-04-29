@@ -28,6 +28,10 @@ Route::get('show/{id}', [
 	'uses' => 'RoomController@show',
 	'as' => 'show',
 ]);
+Route::get('order/{id}', [
+	'uses' => 'OrderController@orderProcess',
+	'as' => 'order',
+]);
 Route::group(['prefix' => 'admin'], function () {
 	// Route::get('', [
 	//     'uses' => 'PostController@getAdminIndex',

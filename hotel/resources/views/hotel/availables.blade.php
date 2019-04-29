@@ -9,20 +9,22 @@
         <th scope="col">Room no</th>
         <th scope="col">Type</th>
         <th scope="col">Cost</th>
-        <th scope="col">Order links</th>
+        <th scope="col">See Inside Room</th>
       </tr>
     </thead>
     <tbody>
+      @isset($availableRooms)
+     @foreach($availableRooms as $aroom)
       <tr>
-       {{-- @isset($availableRooms) --}}
-       @foreach($availableRooms as $aroom)
         <th scope="row">{{$aroom->room_number}}</th>
         <td>{{$aroom->type}}</td>
         <td>{{$aroom->cost}}</td>
-        <td><a href="{{route('show', ['id'=>$aroom->id])}}">Show</a></td>
-        @endforeach
-{{--         @endisset --}}
+        <td>
+        <a href="{{route('show', ['id'=>$aroom->id])}}" class="btn btn-primary" role="button">Show</a>
+        </td>
       </tr>
+      @endforeach
+        @endisset
     </tbody>
   </table>
 
