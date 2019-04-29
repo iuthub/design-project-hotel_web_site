@@ -1,11 +1,10 @@
     @extends('layouts.master')
     @section('content')
         
-   
         <div class="slideWiz" style="width: 100%; height: 100vh;"></div>
 
         {{-- Date picker --}}
-        <div class="container">
+        <div class="container slideanim">
             <div class="checking mt-5 z-depth-4">
             <form action="#" class="d-flex flex-wrap">
                 <div class="form-group flex-fill p-3">
@@ -52,7 +51,7 @@
         </div>
         
         {{-- Welcome --}}
-        <div class="welcome m-5">
+        <div class="welcome m-5 slideanim">
             <div class="container">
                 <div class="row">
                 <div class="col-lg-6">
@@ -68,61 +67,61 @@
         </div>
 
         {{-- Rooms --}}
-        <div class="rooms">
+        <div class="rooms slideanim">
             <div class="container text-center">
-            <div class="rooms-heading">
-                <h5>PLENTY OF ROOM...</h5>
-                <h1 class="display-3">Rooms & Suites</h1>
-                <p>Modern Hotel has 35 elegantly furnished and air conditioned classic rooms, which will be a perfect pick both for business and leisure travelers...</p>
-            </div>
+                <div class="rooms-heading">
+                    <h5>PLENTY OF ROOM...</h5>
+                    <h1 class="display-3">Rooms & Suites</h1>
+                    <p>Modern Hotel has 35 elegantly furnished and air conditioned classic rooms, which will be a perfect pick both for business and leisure travelers...</p>
+                </div>
             </div>
             <div class="container">
-            <div class="row">
-                <div class="col-lg-4 view overlay zoom p-5">
-                <img src="images/suite.jpg" alt="">
-                <div class="suite pt-5">
-                    <h1>Suite</h1>
-                    <h2 class="display-4">&#36;249<span>&#47;per night</span></h2>
-                    <ul>
-                    <li>Only 5 rooms are available</li>
-                    <li>Breakfast included</li>
-                    <li>Price does not include VAT & services fee</li>
-                    </ul>
-                    <button type="submit" class="btn btn-primary flex-fill pr-5 pl-5">Book Now!</button>
+                <div class="row">
+                    <div class="col-lg-4 view overlay zoom p-5">
+                    <img src="images/suite.jpg" alt="">
+                    <div class="suite pt-5">
+                        <h1>Suite</h1>
+                        <h2 class="display-4">&#36;249<span>&#47;per night</span></h2>
+                        <ul>
+                        <li>Only 5 rooms are available</li>
+                        <li>Breakfast included</li>
+                        <li>Price does not include VAT & services fee</li>
+                        </ul>
+                        <button type="submit" class="btn btn-primary flex-fill pr-5 pl-5">Book Now!</button>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 view overlay zoom p-5">
+                    <img src="images/double.jpg" alt="">
+                    <div class="suite pt-5">
+                        <h1>Double Room</h1>
+                        <h2 class="display-4">&#36;114<span>&#47;per night</span></h2>
+                        <ul>
+                            <li>Perfect for traveling couples</li>
+                            <li>Breakfast not included</li>
+                            <li>Concierge services</li>
+                        </ul>
+                        <button type="submit" class="btn btn-primary flex-fill pr-5 pl-5">Book Now!</button>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 view overlay zoom p-5 ">
+                    <img src="images/family.jpg" alt="">
+                    <div class="suite pt-5">
+                        <h1>Family Room</h1>
+                        <h2 class="display-4">&#36;195<span>&#47;per night</span></h2>
+                        <ul>
+                            <li>Two double beds</li>
+                            <li>Babysitting facilities</li>
+                            <li>1 free bed available on request</li>
+                        </ul>
+                        <button type="submit" class="btn btn-primary flex-fill pr-5 pl-5">Book Now!</button>
+                    </div>
+                    </div>
                 </div>
-                </div>
-                <div class="col-lg-4 view overlay zoom p-5">
-                <img src="images/double.jpg" alt="">
-                <div class="suite pt-5">
-                    <h1>Double Room</h1>
-                    <h2 class="display-4">&#36;114<span>&#47;per night</span></h2>
-                    <ul>
-                        <li>Perfect for traveling couples</li>
-                        <li>Breakfast not included</li>
-                        <li>Concierge services</li>
-                    </ul>
-                    <button type="submit" class="btn btn-primary flex-fill pr-5 pl-5">Book Now!</button>
-                </div>
-                </div>
-                <div class="col-lg-4 view overlay zoom p-5 ">
-                <img src="images/family.jpg" alt="">
-                <div class="suite pt-5">
-                    <h1>Family Room</h1>
-                    <h2 class="display-4">&#36;195<span>&#47;per night</span></h2>
-                    <ul>
-                        <li>Two double beds</li>
-                        <li>Babysitting facilities</li>
-                        <li>1 free bed available on request</li>
-                    </ul>
-                    <button type="submit" class="btn btn-primary flex-fill pr-5 pl-5">Book Now!</button>
-                </div>
-                </div>
-            </div>
             </div>
         </div>
 
         {{-- Dining Bar --}}
-        <div class="dining-bar pt-1">
+        <div class="dining-bar pt-1 slideanim">
             <div class="container text-center">
                 <div class="rooms-heading">
                 <h1 class="display-3">Dining & Bar</h1>
@@ -149,19 +148,19 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row">
-                        <div class="col-lg-6 p-5">
-                            <h1 class="display-5">Plov&nbsp;<span>&#36;10</span></h1>
-                            <p>Plov is cooked with rice, fresh mutton or beef, yellow or red carrot, onions and vegetable oil. It is prepared in a deep cast-iron pot (kazan), which is uniformly warmed and a dish is not burnt.</p>
-                            <h1 class="display-5">Chicken Parmagiana&nbsp;<span>&#36;8</span></h1>
-                            <p>Chicken Surf & Turf $31 Char grilled garlic chicken breast fillet topped with a garlic seafood sauce & served with garden salad & steak fries or with steamed vegetables and potato.</p>
-                            <h1 class="display-5">Gluten Free Surf & Turf&nbsp;<span>&#36;8</span></h1>
-                            <p>Char grilled Scotch fillet 300gm topped with a garlic seafood sauce & served with garden salad & steak fries or with steamed veggies roast chat potato.</p>
+                        <div class="row">
+                            <div class="col-lg-6 p-5">
+                                <h1 class="display-5">Plov&nbsp;<span>&#36;10</span></h1>
+                                <p>Plov is cooked with rice, fresh mutton or beef, yellow or red carrot, onions and vegetable oil. It is prepared in a deep cast-iron pot (kazan), which is uniformly warmed and a dish is not burnt.</p>
+                                <h1 class="display-5">Chicken Parmagiana&nbsp;<span>&#36;8</span></h1>
+                                <p>Chicken Surf & Turf $31 Char grilled garlic chicken breast fillet topped with a garlic seafood sauce & served with garden salad & steak fries or with steamed vegetables and potato.</p>
+                                <h1 class="display-5">Gluten Free Surf & Turf&nbsp;<span>&#36;8</span></h1>
+                                <p>Char grilled Scotch fillet 300gm topped with a garlic seafood sauce & served with garden salad & steak fries or with steamed veggies roast chat potato.</p>
+                            </div>
+                            <div class="col-lg-6 overlay zoom p-5">
+                                <img src="images/plov.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
-                        <div class="col-lg-6 overlay zoom p-5">
-                            <img src="images/plov.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="row">
@@ -169,8 +168,8 @@
                                 <h1 class="display-5  ">Organic Yoghurt Panna Cotta&nbsp;<span>&#36;8</span></h1>
                                 <p>Blackcurrant & limoncello compote, crunchy spiced crumble & lemon zest</p>
                                 <h1 class="display-5">Poleta Cake&nbsp;<span>&#36;8</span></h1>
-                                <p>Served with whipped crème fraîche, fresh orange & pomegranate
-                                <h1 class="display-5">GVin Sano Tiramisu&nbsp;<span>&#36;8</span></h1>
+                                <p>Served with whipped crème fraîche, fresh orange & pomegranate</p>
+                                <h1 class="display-5">Vin Sano Tiramisu&nbsp;<span>&#36;8</span></h1>
                                 <p>The classic Italian dessert with vin santo, chocolate shavings & orange zest</p>
                             </div>
                             <div class="col-lg-6 overlay zoom p-5">
@@ -195,12 +194,12 @@
                     </div>
                 </div>
                 </div>  
-                <button type="submit" class="btn btn-primary pr-5 pl-5">see all menu</button>
+                <a href="bar"><button type="button" class="btn btn-primary pr-5 pl-5">see all menu</button></a>
             </div>
         </div>
         
         {{-- Location --}}
-        <div class="location pt-5">
+        <div class="location pt-5 slideanim">
             <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -236,13 +235,13 @@
         </div>
 
         {{--Google Map --}}
-        <div class="map">
+        <div class="map slideanim">
             <div class="container-fluid">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1259.934216738232!2d69.27666450982048!3d41.31657562615783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b302631a383%3A0x324fb78013c57369!2sHyatt+Regency+Tashkent!5e0!3m2!1sru!2s!4v1555930770197!5m2!1sru!2s" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
 
-        <a href="#" class="scrollToTop"><i class='fas fa-arrow-circle-up'></i></a>
+        <a href="#" class="scrollToTop slideanim"><i class='fas fa-arrow-circle-up'></i></a>
     @endsection
 
 

@@ -5,7 +5,7 @@
   <!-- Material Design Bootstrap -->
   <link href="{{URL::to('css/mdb.min.css')}}" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="{{URL::to('css/style.css')}}" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   {{-- Google fonts --}}
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" 
   rel="stylesheet">
@@ -13,6 +13,7 @@
   <!-- My styles -->
   <link href="css/index.css" rel="stylesheet">
   <link href="css/slideWiz.css" rel="stylesheet" type="text/css">
+  <link href="css/bar.css" rel="stylesheet">
   {{-- date picker --}}
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>

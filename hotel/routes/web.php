@@ -15,6 +15,6 @@ Route::get('/', function () {
 	return view('hotel/index');
 });
 
-Route::get('/blog', function () {
-	return view('blog/main');
+Route::get('/bar', function () {
+	return view('bar/main');
 });

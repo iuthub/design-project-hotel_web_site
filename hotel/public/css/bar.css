@@ -1,0 +1,165 @@
+
+.container-fluid {
+    padding: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+.container-fluid section {
+    width: 100%;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.container-fluid section:nth-child(1) .image{
+    background-image: url(../images/bar/bar.jpeg);
+}
+
+
+.container-fluid section .image {
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    opacity: 0.7;
+}
+
+.container-fluid section .stuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    max-width: 70%;
+    text-align: center;
+    z-index: 1000;
+    color: #ffffff;
+    margin: 0 auto;
+    position: relative;
+    padding: 100px 0;
+}
+
+.container-fluid section .stuff h2, h1 {
+    margin: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container-fluid section .stuff p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+.container-fluid section .stuff h1:after{
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #ffffff;
+    content: "";
+    margin: 30px 0;
+}
+
+/* --------------Main-------------- */
+.main img {
+    border-radius: 2px;
+    transition: all .25s linear;
+    box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
+
+.main h1, p, .desserts h1, p, .drinks h1, p{
+    text-align: center;
+}
+
+.main h1 span, .desserts h1 span, .drinks h1 span   {
+    font-size: 30px;
+    color: #4285F4;
+}
+
+/* -----------Desserts------------ */
+.desserts img, .drinks img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 2px;
+    transition: all .25s linear;
+    box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* ----------Download------------ */
+.download{
+    background-color: aqua;
+}
+
+/* -------------Scroll---------------- */
+
+.scrollToTop {
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color: #4285F4;
+    text-decoration: none;
+    position: fixed;
+    top: 500px;
+    right: 10px;
+    display: none;
+}
+
+.scrollToTop:hover {
+    text-decoration: none;
+}
+
+/* ------------Slideanim-------------- */
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

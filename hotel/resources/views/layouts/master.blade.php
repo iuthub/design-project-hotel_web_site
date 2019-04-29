@@ -34,5 +34,6 @@
   <script src="js/slideShow.js"></script>
   {{-- my script --}}
   <script src="js/script.js"></script>
+  <script src="js/bar.js"></script>
 </body>
 </html>
