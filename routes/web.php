@@ -20,5 +20,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/sake', 'HomeController@index')->name('home');
+Route::get('/fake', 'HomeController@index')->name('home');
 
