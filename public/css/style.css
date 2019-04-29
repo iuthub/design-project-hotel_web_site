@@ -1,0 +1,31 @@
+.nav-link
+{
+    color:white;
+}
+.navbar-brand
+{
+    color:white;
+}
+footer
+{
+    min-height: 80px;
+    color:white;
+}
+.content
+{
+    min-height:600px;
+   
+    margin-top:70px;
+}
+.list-group-item
+{
+    cursor:pointer;
+}
+.list-group-item:hover
+{
+    background-color:#efefef;
+}
+.bigfont tr td
+{
+    font-size:120%;
+}
