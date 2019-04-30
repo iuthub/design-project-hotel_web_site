@@ -70,6 +70,25 @@
     margin: 30px 0;
 }
 
+/* ----------Navbar----------- */
+
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    background: #eaebec;
+}
+
+.navbar a {
+    font-family: 'Acme', sans-serif;
+}
+
 /* --------------Main-------------- */
 
 .main img {
@@ -78,7 +97,7 @@
     box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
 }
 
-.main h1, p, .desserts h1, p, .drinks h1, p {
+.main h1, .main p, .desserts h1, .desserts p, .drinks h1, .drinks p {
     text-align: center;
 }
 

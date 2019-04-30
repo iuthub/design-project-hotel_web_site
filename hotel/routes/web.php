@@ -11,10 +11,31 @@
 |
  */
 
-Route::get('/', function () {
-	return view('hotel/index');
-});
-
+Route::get('/', [
+	'uses' => 'MainController@getIndex',
+	'as' => 'main.index',
+]);
 Route::get('/bar', function () {
 	return view('bar/main');
 });
+
+Route::get('/check', [
+	'uses' => 'MainController@searchAvailableRooms',
+	'as' => 'check',
+]);
+Route::get('show/{id}', [
+	'uses' => 'RoomController@show',
+	'as' => 'show',
+]);
+Route::get('order/{id}', [
+	'uses' => 'OrderController@orderProcess',
+	'as' => 'order',
+]);
+// Route::group(['prefix' => 'admin'], function () {
+	
+// });
+Auth::routes();
+Route::get('profile', 'UserController@profile');
+Route::post('profile', 'UserController@update_avatar');
+
+Route::get('/home', 'HomeController@index')->name('home');

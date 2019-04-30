@@ -1,19 +1,18 @@
     @extends('layouts.master')
     @section('content')
-        
         <div class="slideWiz" style="width: 100%; height: 100vh;"></div>
 
         {{-- Date picker --}}
         <div class="container slideanim">
             <div class="checking mt-5 z-depth-4">
-            <form action="#" class="d-flex flex-wrap">
+            <form action="{{route('check')}}" class="d-flex flex-wrap">
                 <div class="form-group flex-fill p-3">
                 <label for="text" class="text-uppercase">arrival:</label>
-                <input type="text" id="datepicker" class="form-control" required/>
+                <input type="text" id="datepicker" name="arrival" class="form-control" required/>
                 </div>
                 <div class="form-group flex-fill p-3">
                     <label for="text" class="text-uppercase">departure:</label>
-                    <input type="text" id="datepicker2" class="form-control" required/>
+                    <input type="text" id="datepicker2" name="departure" class="form-control" required/>
                 </div>
                 <div class="form-group flex-fill p-3">
                     <label for="text" class="text-uppercase">adults</label>
@@ -49,7 +48,7 @@
             </form>
             </div>
         </div>
-        
+
         {{-- Welcome --}}
         <div class="welcome m-5 slideanim">
             <div class="container">
@@ -144,7 +143,7 @@
                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Drinks</a>
                     </li>
                 </ul>
-                
+
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -193,11 +192,11 @@
                         </div>
                     </div>
                 </div>
-                </div>  
+                </div>
                 <a href="bar"><button type="button" class="btn btn-primary pr-5 pl-5">see all menu</button></a>
             </div>
         </div>
-        
+
         {{-- Location --}}
         <div class="location pt-5 slideanim">
             <div class="container">
@@ -206,11 +205,11 @@
                 <div class="location-box">
                     <h1 class="display-4">Hotel location &amp; map</h1>
                     <p class=""><i class="fas fa-map-marker-alt"></i>&nbsp;1 A Navoi St, Ташкент 100017, Узбекистан</p>
-                    <p class=""><i class="fas fa-map-marked-alt"></i>&nbsp;878G+JW Ташкент, Узбекистан</p> 
-                    <p class=""><a href="#"><i class="fas fa-globe-americas"></i>&nbsp;Uzbekapolis.com</a></p> 
+                    <p class=""><i class="fas fa-map-marked-alt"></i>&nbsp;878G+JW Ташкент, Узбекистан</p>
+                    <p class=""><a href="#"><i class="fas fa-globe-americas"></i>&nbsp;Uzbekapolis.com</a></p>
                     <p class=""><i class="fa fa-phone" aria-hidden="true"></i>
                     &nbsp;+99897&ndash;772&ndash;64&ndash;62</p>
-                </div>   
+                </div>
                 </div>
                 <div class="col-lg-6">
                     <form action="">
@@ -226,8 +225,8 @@
                         </div>
                         <div class="form-group col-md-12">
                         <button type="submit" class="btn btn-primary float-right">Send</button>
-                        </div>  
-                    </div>  
+                        </div>
+                    </div>
                     </form>
                 </div>
             </div>

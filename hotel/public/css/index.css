@@ -6,6 +6,29 @@ p {
     font-family: 'Rajdhani', sans-serif;
 }
 
+/*-----------Navbar-------------*/
+.sticky-wrapper{
+    height: 1px !important;
+}
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    background: #eaebec;
+}
+
+.navbar a {
+    font-family: 'Acme', sans-serif;
+}
+
+/* -----------Welcome------------- */
+
 .checking form label {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 20px;
@@ -198,12 +221,6 @@ p {
     }
 }
 
-/* -------------Location---------------- */
-.location .location-box p{
-    text-align: unset;
-}
-
-
 /* -------------Media 1200------------ */
 
 @media only screen and (max-width: 1200px) {
@@ -222,11 +239,10 @@ p {
     h5 {
         font-size: 20px !important;
     }
-    h1, h2{ 
+    h1, h2 {
         font-size: 30px !important;
     }
     p {
         font-size: 12px !important;
     }
-  
 }

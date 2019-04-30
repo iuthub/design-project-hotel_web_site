@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" 
   rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   <!-- My styles -->
   <link href="css/index.css" rel="stylesheet">
   <link href="css/slideWiz.css" rel="stylesheet" type="text/css">
