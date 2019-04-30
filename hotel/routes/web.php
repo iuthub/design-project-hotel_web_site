@@ -19,11 +19,9 @@ Route::get('/check', [
 	'uses' => 'MainController@searchAvailableRooms',
 	'as' => 'check',
 ]);
-
-Route::get('blog/index', [
-	'uses' => 'PostController@getIndex',
-	'as' => 'blog.index',
-]);
+Route::get('/bar', function () {
+	return view('bar/main');
+});
 Route::get('show/{id}', [
 	'uses' => 'RoomController@show',
 	'as' => 'show',
@@ -31,33 +29,9 @@ Route::get('show/{id}', [
 Route::get('order/{id}', [
 	'uses' => 'OrderController@orderProcess',
 	'as' => 'order',
-]);
+])->middleware('auth');
 Route::group(['prefix' => 'admin'], function () {
-	// Route::get('', [
-	//     'uses' => 'PostController@getAdminIndex',
-	//     'as' => 'admin.index'
-	// ]);
-	Route::get('create', [
-		'uses' => 'PostController@getAdminCreate',
-		'as' => 'admin.create',
-	]);
 
-	Route::post('create', [
-		'uses' => 'PostController@postAdminCreate',
-		'as' => 'admin.create',
-	]);
-	// Route::get('edit/{id}', [
-	//     'uses' => 'PostController@getAdminEdit',
-	//     'as' => 'admin.edit'
-	// ]);
-	// Route::get('delete/{id}', [
-	//     'uses' => 'PostController@getAdminDelete',
-	//     'as' => 'admin.delete'
-	// ]);
-	// Route::post('edit', [
-	//     'uses' => 'PostController@postAdminUpdate',
-	//     'as' => 'admin.update'
-	// ]);
 });
 Auth::routes();
 Route::get('profile', 'UserController@profile');

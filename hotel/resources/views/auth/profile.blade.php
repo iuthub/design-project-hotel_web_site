@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-   <div class="row">
+     <div class="row">
             @if ($message = Session::get('success'))
 
                 <div class="alert alert-success alert-block">
@@ -24,28 +24,31 @@
                 </div>
             @endif
         </div>
-        <div class="row">
+        <div class="container">
 
-            <div class="profile-header-container">
-                <div class="profile-header-img">
-                    <img class="rounded float-left" style="width:250px" src="/storage/avatars/{{ $user->avatar }}" />
-                    <!-- badge -->
-                    <div class="rank-label-container">
-                        <span class="label label-default rank-label">{{$user->name}}</span>
-                    </div>
-                </div>
-            </div>
+<div class="row d-flex justify-content-left">
 
-        </div>
-        <div class="row justify-content-end
-">
-            <form action="/profile" method="post" enctype="multipart/form-data">
+  <!--Grid column-->
+  <div class="col-md-6">
+
+<img class="rounded mx-auto d-bloc" style="max-width: 250px;max-height: 250px" src="/storage/avatars/{{ $user->avatar }}" />
+
+  </div>
+  <!--Grid column-->
+  <div class="col-md-6"><form action="/profile" method="post" enctype="multipart/form-data">
+                <h2>{{$user->name}}</h2>
+                <h3>Address:{{$user->address}}</h3>
+                <h3>Passport id:{{$user->pass_id}}</h3>
                 @csrf
                 <div class="form-group">
                     <input type="file" class="form-control-file" name="avatar" id="avatarFile" aria-describedby="fileHelp">
                     <small id="fileHelp" class="form-text text-muted">Please upload a valid image file. Size of image should not be more than 2MB.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+            </form></div>  
+</div>
+            
+
+</div>
+
 @endsection
