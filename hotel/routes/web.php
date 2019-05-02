@@ -38,3 +38,8 @@ Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
