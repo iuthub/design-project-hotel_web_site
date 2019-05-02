@@ -1,12 +1,12 @@
 @extends('layouts.master')
 @section('content')
-
-        <div class="table-responsive text-nowrap">
+<div class="container">
+        <div class="table table-striped w-auto">
 
   <table class="table">
-    <thead class="black white-text">
+    <thead>
       <tr>
-        <th scope="col">Room no</th>
+        <th scope="col">Room no </th>
         <th scope="col">Type</th>
         <th scope="col">Cost</th>
         <th scope="col">See Inside Room</th>
@@ -28,6 +28,7 @@
     </tbody>
   </table>
 
+</div>
 </div>
 {{-- {{print_r($availableRooms)}} --}}
 @endsection
