@@ -19,9 +19,6 @@ Route::get('/check', [
 	'uses' => 'MainController@searchAvailableRooms',
 	'as' => 'check',
 ]);
-Route::get('/bar', function () {
-	return view('bar/main');
-});
 Route::get('show/{id}', [
 	'uses' => 'RoomController@show',
 	'as' => 'show',
@@ -30,9 +27,21 @@ Route::get('order/{id}', [
 	'uses' => 'OrderController@orderProcess',
 	'as' => 'order',
 ])->middleware('auth');
-Route::group(['prefix' => 'admin'], function () {
-
-});
+Route::get('order/cancel/{id}', [
+	'uses' => 'OrderController@cancelOrder',
+	'as' => 'order.cancel',
+])->middleware('auth');
+//Pages without controllers
+Route::get('/bar', function () {
+	return view('bar/main');
+})->name('bar');
+Route::get('amenities', function(){
+	return view('bar.main');
+})->name('amenities');
+Route::get('rooms', function(){
+	return view('hotel.rooms');
+})->name('rooms');
+//END OF Pages without controllers
 Auth::routes();
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');

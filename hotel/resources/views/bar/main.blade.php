@@ -1,4 +1,8 @@
 @extends('layouts.master')
+{{-- @section('assets')
+ <link href="css/index.css" rel="stylesheet">
+  <link href="css/slideWiz.css" rel="stylesheet" type="text/css">
+@endsection --}}
 @section('content')
   <div class="container-fluid">
     <section>
@@ -51,7 +55,7 @@
           </div>
         </div>
         <div class="col-lg-4 view overlay zoom p-5">
-          <img src="images/bar/vin-sano.jpg" alt="">
+          <img src="{{URL::to('images/bar/vin-sano.jpg')}}" alt="">
           <div class="vin-sano pt-5">
             <h1 class="display-5">Vin Sano Tiramisu&nbsp;<span>&#36;8</span></h1>
             <p>The classic Italian dessert with vin santo, chocolate shavings & orange zest</p>

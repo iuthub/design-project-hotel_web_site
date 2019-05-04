@@ -1,4 +1,14 @@
     @extends('layouts.master')
+    @section('assets')
+      <!-- My styles -->
+   <link href="{{URL::to('css/index.css')}}" rel="stylesheet">
+   <link href="{{URL::to('css/slideWiz.css')}}" rel="stylesheet">
+  {{-- date picker --}}
+
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+
+    @endsection
     @section('content')
 
 
@@ -197,7 +207,7 @@
                     </div>
                 </div>
                 </div>
-                <button type="submit" class="btn btn-primary pr-5 pl-5">see all menu</button>
+                <button type="submit" class="btn btn-primary pr-5 pl-5"><a href="{{route('bar')}}">see all menu</a></button>
             </div>
         </div>
 

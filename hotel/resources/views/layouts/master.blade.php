@@ -12,6 +12,7 @@
 <body>
 <header>
 	@include('partials.header')
+  @yield('assets')
 </header>
 <main>
 
@@ -33,11 +34,11 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="{{URL::to('js/mdb.min.js')}}"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="{{URL::to('js/uploadcharacteristics.js')}}"></script>
  {{-- Jquery slider Plugin--}}
   <script src="js/framework/slideWiz.js"></script>
   <script src="js/slideShow.js"></script>
   {{-- my script --}}
   <script src="js/script.js"></script>
+  <script type="text/javascript" src="{{URL::to('/js/amenities.js')}}"></script>
 </body>
 </html>

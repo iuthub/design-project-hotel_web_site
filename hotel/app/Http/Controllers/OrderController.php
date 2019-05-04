@@ -22,4 +22,9 @@ class OrderController extends Controller {
 		$order->save();
 		return view('partials.infos')->with('success', 'You have ordered successfully!');
 	}
+	public function cancelOrder($orderNo=null){
+		$order=Order::find($orderNo);
+		$order->delete();
+		return redirect()->back();
+	}
 }

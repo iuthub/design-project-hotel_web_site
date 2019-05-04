@@ -43,14 +43,21 @@
         <hr>
 
         <!-- Call to action -->
+       @if (Route::has('register'))
         <ul class="list-unstyled list-inline text-center py-2">
           <li class="list-inline-item">
             <h5 class="mb-1">Register for free</h5>
           </li>
           <li class="list-inline-item">
-            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+            <a href="{{route('register')}}" class="btn btn-danger btn-rounded">Sign Up</a>
           </li>
         </ul>
+        @endif
+
+                             {{--    <li class="nav-item">
+                                    <a class="nav-link" </a>
+                                </li>
+                            @endif --}}
         <!-- Call to action -->
 
         <hr>
