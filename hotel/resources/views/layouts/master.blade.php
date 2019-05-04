@@ -13,24 +13,23 @@
 	@include('partials.header')
 </header>
 <main>
-<div class="container">
+
     @yield('content')
-</div>
+<!-- div of container above -->
 </main>
 <footer>
 @include('partials.footer')
 </footer>
 
- <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="{{URL::to('js/jquery-3.3.1.min.js')}}"></script>
-
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="{{URL::to('js/popper.min.js')}}"></script>
-
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{{URL::to('js/bootstrap.min.js')}}"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="{{URL::to('js/mdb.min.js')}}"></script>
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+<script type="text/javascript" src="{{URL::to('/js/amenities.js')}}"></script>
 </body>
 </html>

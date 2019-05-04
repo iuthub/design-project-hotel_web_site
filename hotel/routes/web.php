@@ -14,3 +14,6 @@
 Route::get('/', function () {
 	return view('blog/main');
 });
+Route::get('/amenities', function () {
+	return view('amenities/amenities');
+});

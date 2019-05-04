@@ -5,6 +5,7 @@
   <!-- Material Design Bootstrap -->
   <link href="{{URL::to('css/mdb.min.css')}}" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="{{URL::to('css/style.css')}}" rel="stylesheet">
+  <link href="{{URL::to('css/amenities.css')}}" rel="stylesheet">
 
 
+  
