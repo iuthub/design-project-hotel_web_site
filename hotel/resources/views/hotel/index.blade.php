@@ -28,6 +28,8 @@
                     <option>8</option>
                     <option>9</option>
                     <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
                     </select>
                 </div>
                 <div class="form-group flex-fill  p-3">
@@ -43,6 +45,8 @@
                     <option>8</option>
                     <option>9</option>
                     <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary flex-fill p-3 m-5">Submit</button>
