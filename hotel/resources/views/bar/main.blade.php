@@ -18,11 +18,11 @@
       <h1>Main Courses Menu</h1>
       <div class="row">
           <div class="col-lg-6 p-5">
-              <h1 class="display-5">Plov&nbsp;<span>&#36;10</span></h1>
+              <h1 class="display-5">Plov&nbsp;<span>&#36;12</span></h1>
               <p>Plov is cooked with rice, fresh mutton or beef, yellow or red carrot, onions and vegetable oil. It is prepared in a deep cast-iron pot (kazan), which is uniformly warmed and a dish is not burnt.</p>
-              <h1 class="display-5">Chicken Parmagiana&nbsp;<span>&#36;8</span></h1>
+              <h1 class="display-5">Chicken Parmagiana&nbsp;<span>&#36;10</span></h1>
               <p>Chicken Surf & Turf $31 Char grilled garlic chicken breast fillet topped with a garlic seafood sauce & served with garden salad & steak fries or with steamed vegetables and potato.</p>
-              <h1 class="display-5">Gluten Free Surf & Turf&nbsp;<span>&#36;8</span></h1>
+              <h1 class="display-5">Gluten Free Surf & Turf&nbsp;<span>&#36;10</span></h1>
               <p>Char grilled Scotch fillet 300gm topped with a garlic seafood sauce & served with garden salad & steak fries or with steamed veggies roast chat potato.</p>
           </div>
           <div class="col-lg-6 overlay zoom p-5">
@@ -47,14 +47,14 @@
         <div class="col-lg-4 view overlay zoom p-5">
           <img src="images/bar/polette.jpeg" alt="">
           <div class="poleta pt-5">
-            <h1 class="display-5">Poleta Cake&nbsp;<span>&#36;8</span></h1>
+            <h1 class="display-5">Poleta Cake&nbsp;<span>&#36;10</span></h1>
             <p>Served with whipped crème fraîche, fresh orange & pomegranate</p>
           </div>
         </div>
         <div class="col-lg-4 view overlay zoom p-5">
           <img src="images/bar/vin-sano.jpg" alt="">
           <div class="vin-sano pt-5">
-            <h1 class="display-5">Vin Sano Tiramisu&nbsp;<span>&#36;8</span></h1>
+            <h1 class="display-5">Vin Sano Tiramisu&nbsp;<span>&#36;10</span></h1>
             <p>The classic Italian dessert with vin santo, chocolate shavings & orange zest</p>
           </div>
         </div>
@@ -71,11 +71,11 @@
               <img src="images/drink.jpeg" alt="" class="img-fluid">
           </div>
           <div class="col-lg-6 p-5">
-              <h1 class="display-5">Aperol Spritz&nbsp;<span>&#36;10</span></h1>
+              <h1 class="display-5">Aperol Spritz&nbsp;<span>&#36;12</span></h1>
               <p>A refreshing mix of Aperol, soda & Jamie’s Prosecco</p>
-              <h1 class="display-5">Elderflower Spritz&nbsp;<span>&#36;7</span></h1>
+              <h1 class="display-5">Elderflower Spritz&nbsp;<span>&#36;9</span></h1>
               <p>St Germain elderflower liqueur, Jamie’s Prosecco & soda</p>
-              <h1 class="display-5">Bellini&nbsp;<span>&#36;8</span></h1>
+              <h1 class="display-5">Bellini&nbsp;<span>&#36;10</span></h1>
               <p>White peach purée & Jamie’s Prosecco</p>
           </div>
       </div>
