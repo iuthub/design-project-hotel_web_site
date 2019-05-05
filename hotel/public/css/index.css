@@ -8,16 +8,16 @@ p {
 
 .checking form label {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .welcome h5, h1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .welcome p {
-    font-size: 20px;
+    font-size: 30px;
     text-align: unset;
 }
 
@@ -47,7 +47,7 @@ p {
 }
 
 .rooms .suite h2 span {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .rooms .suite ul {
@@ -95,7 +95,7 @@ p {
 
 .dining-bar #tile-1 .slider {
     display: inline-block;
-    width: 30px;
+    width: 40px;
     height: 4px;
     border-radius: 3px;
     background-color: #4285F4;
@@ -118,7 +118,7 @@ p {
 }
 
 .dining-bar .tab-content h1 span {
-    font-size: 30px;
+    font-size: 40px;
     color: #4285F4;
 }
 
@@ -141,7 +141,7 @@ p {
 .scrollToTop {
     width: 100px;
     height: 130px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     font-weight: bold;
     font-size: 36px;
@@ -208,12 +208,12 @@ p {
 
 @media only screen and (max-width: 1200px) {
     .welcome h5 {
-        font-size: 25px;
+        font-size: 35px;
     }
     .welcome h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
     .welcome p {
-        font-size: 16px;
+        font-size: 26px;
     }
 }
