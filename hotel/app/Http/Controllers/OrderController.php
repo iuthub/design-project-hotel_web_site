@@ -20,7 +20,7 @@ class OrderController extends Controller {
 			'departure' => $departure,
 		]);
 		$order->save();
-		return view('partials.infos')->with('success', 'You have ordered successfully!');
+		return redirect()->route('main.index');
 	}
 	public function cancelOrder($orderNo=null){
 		$order=Order::find($orderNo);
